@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS and jQuery Practice</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+    <!-- Include the jQuery.Color plugin so we can animate the color of elements -->
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hello Class!!!</h1>
+    </div>
+    <div class="left">
+      <ul>
+        <li><a href="#" id="selfLink">Home</a>
+        <li><a href="about_us.html">About Us</a>
+        <li><a href="contact.html">Contact</a>
+      </ul>
+      <div style="clear: both;">
+          <img src="images/logo1.jpg" style="width: 100%"/>
+      </div>
+    </div>
+
+    <div class="content">
+
+    <p id="intro">This is an example program that implements various CSS Styling elements.</p>
+    <p>Another paragraph here</p>
+    <p class="strong">Yet another paragraph</p>
+    <p>The following topics were completed in the class till now:</p>
+      <ul id="topics" class="a">
+        <li>Course Introduction</li>
+        <li>Introduction to data</li>
+        <li>Introduction to manipulation</li>
+        <li>Conditionals</li>
+        <li>Introduction to HTML</li>
+        <li>Introduction to CSS</li>
+      </ul>
+
+    <p class="strong">Visit the <a id="courseLink" href="http://bulletin.unl.edu/courses/CSCE/196">Coarse Website</a> for more details.
+
+    <p>Keep in mind your options for pre-hacktivity requirements:
+    <ol id="list2">
+        <li>Read a tutorial</li>
+        <li>Watch a video</li>
+        <li>Interact with a tutorial</li>
+    </ol>
+        <p>Text input: <input type="text" id="textInput01"/></p>
+
+        <h3>Robot Dancing!</h3>
+        <figure style="width: 50%">
+            <img src="images/robo.jpg"/>
+            <figcaption>The Pilobolus Dance Theatre's main stage presentation
+                featured a performance by two flying robots developed by Assistant
+                Professor Carrick Detweiler. A campus cross-discipline workshop
+                will discuss the combination of dancers and aerial robot technology.
+            </figcaption>
+        </figure>
+
+
+    <h3>All About jQuery</h3>
+    <div id="mainArticle">
+      <p id="leadParagraph">jQuery is a cross-platform JavaScript library designed
+          to simplify the client-side scripting of HTML. jQuery is the most
+          popular JavaScript library in use today, with installation on 65% of
+          the top 10 million highest-trafficked sites on the Web. jQuery is free,
+          open-source software licensed under the MIT License.</p>
+      <p>jQuery's syntax is designed to make it easier to navigate a document,
+          select DOM elements, create animations, handle events, and develop
+          Ajax applications. jQuery also provides capabilities for developers
+          to create plug-ins on top of the JavaScript library. This enables
+          developers to create abstractions for low-level interaction and
+          animation, advanced effects and high-level, theme-able widgets. The
+          modular approach to the jQuery library allows the creation of
+          powerful dynamic web pages and web applications.</p>
+      <p>The set of jQuery core features—DOM element selections, traversal
+          and manipulation—enabled by its selector engine (named "Sizzle"
+          from v1.3), created a new "programming style", fusing algorithms
+          and DOM data structures. This style influenced the architecture
+          of other JavaScript frameworks like YUI v3 and Dojo, later
+          stimulating the creation of the standard Selectors API.</p>
+      <p>Microsoft and Nokia bundle jQuery on their platforms. Microsoft
+          includes it with Visual Studio[8] for use within Microsoft's
+          ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia
+          has integrated it into the Web Run-Time widget development
+          platform. jQuery has also been used in MediaWiki since version 1.16.</p>
+    </div>
+
+    </div><!--end of content div -->
+  </div><!--end of container div -->
+</body>
+</html>
