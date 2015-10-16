@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>All About jQuery!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body class="container">
+      <div id="titleJumbotron" class="jumbotron container" style="min-height: 200px">
+          <div class="row">
+              <div class="col-md-8">
+                  <h1>All About jQuery Blog!</h1>
+              </div>
+              <div class="col-md-4">
+                  <img src="images/jquery.png" class="img-responsive" alt="jQuery Logo">
+              </div>
+          </div>
+      </div>
+
+      <div id="conference" class="container">
+        <div class="alert alert-info" role="alert">
+            <div class="row">
+                <div class="col-md-8"><strong>jQuery Conference</strong> Don't forget the next jQuery Conference, coming soon!
+                    Look for updates at our main site: <a href="http://cse.unl.edu">http://cse.unl.edu</a>.
+                </div>
+                <div class="col-md-4"><img src="images/jQueryConf.jpg" alt="jQuery Conference"></div>
+            </div>
+        </div>
+      </div>
+    <h3>Resources</h3>
+    <ul>
+        <li><a href="http://jquery.com">Main jQuery Page</a></li>
+        <li><a href="http://jqueryui.com/">jQuery UI Page</a></li>
+        <li><a href="http://getbootstrap.com/">Bootstrap Page</a></li>
+    </ul>
+
+    <h3>jQuery History</h3>
+    <div id="mainArticle">
+      <p id="leadParagraph">jQuery is a cross-platform JavaScript library designed
+          to simplify the client-side scripting of HTML. jQuery is the most
+          popular JavaScript library in use today, with installation on 65% of
+          the top 10 million highest-trafficked sites on the Web. jQuery is free,
+          open-source software licensed under the MIT License.</p>
+      <p>jQuery's syntax is designed to make it easier to navigate a document,
+          select DOM elements, create animations, handle events, and develop
+          Ajax applications. jQuery also provides capabilities for developers
+          to create plug-ins on top of the JavaScript library. This enables
+          developers to create abstractions for low-level interaction and
+          animation, advanced effects and high-level, theme-able widgets. The
+          modular approach to the jQuery library allows the creation of
+          powerful dynamic web pages and web applications.</p>
+      <p>The set of jQuery core features—DOM element selections, traversal
+          and manipulation—enabled by its selector engine (named "Sizzle"
+          from v1.3), created a new "programming style", fusing algorithms
+          and DOM data structures. This style influenced the architecture
+          of other JavaScript frameworks like YUI v3 and Dojo, later
+          stimulating the creation of the standard Selectors API.</p>
+      <p>Microsoft and Nokia bundle jQuery on their platforms. Microsoft
+          includes it with Visual Studio[8] for use within Microsoft's
+          ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia
+          has integrated it into the Web Run-Time widget development
+          platform. jQuery has also been used in MediaWiki since version 1.16.</p>
+    </div>
+
+      <div class="container" id="commentArea">
+      <h3>Comments</h3>
+          <button id="allToggle" class='btn btn-default btn-xs' onclick="toggleAllComments()">Collapse All</button>
+
+
+      <div class="comment" id="comment1">
+          <h1><span class="toggle" id="commentToggle1" onclick="commentToggle('1')">[-]</span> Great Article!</h1>
+          <div id="commentBody1">
+              <p>Thanks for the information, where can I actually download the source?</p>
+              <div class="comment" id="comment1a">
+                <h1><span class="toggle" id="commentToggle1a" onclick="commentToggle('1a')">[-]</span> I'd be interested too.</h1>
+                <div id="commentBody1a">
+                  <p>I too want to get started, I'd appreciate knowing where to downdload it</p>
+                  <div class="comment" id="comment1a1">
+                    <h1><span class="toggle" id="commentToggle1a1" onclick="commentToggle('1a1')">[-]</span> Here you go</h1>
+                      <div id="commentBody1a1">
+                        <p>Try this link: <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">here</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment" id="comment1b">
+                <h1><span class="toggle" id="commentToggle1b" onclick="commentToggle('1b')">[-]</span> Look at the resources</h1>
+                <div id="commentBody1b">
+                  <p>Look at the resources, there are several links there.</p>
+                </div>
+              </div>
+              <div class="comment" id="comment1c">
+                <h1><span class="toggle" id="commentToggle1c" onclick="commentToggle('1c')">[-]</span> Try using Google</h1>
+                <div id="commentBody1c">
+                    <p>Just do a search for "jQuery Download" and you should be able to find it.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="comment" id="comment2">
+          <h1><span class="toggle" id="commentToggle2" onclick="commentToggle('2')">[-]</span> jQuery is great!</h1>
+          <div id="commentBody2">
+              <p>After having used YUI for many years, jQuery using jQuery was
+                 refreshing.  I've totally switched now and haven't looked back.</p>
+          </div>
+      </div>
+      <div class="comment" id="comment4">
+          <h1><span class="toggle" id="commentToggle4" onclick="commentToggle('4')">[-]</span> Be sure to get the latest version</h1>
+          <div id="commentBody4">
+              <p>There was a bug in the previous version that made some of my stuff
+                 not work as I intended.  Be sure you are getting the latest version
+                  with all the bug fixes.</p>
+          </div>
+      </div>
+      </div><!--end commentArea -->
+      <div class="container" style="min-height: 500px">
+      </div>
+  </body>
+</html>

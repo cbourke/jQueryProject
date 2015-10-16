@@ -1,0 +1,20 @@
+.comment {
+  margin-left: 2em;
+}
+
+.comment h1 {
+  font-size: 150%;
+  margin-left: 1em;
+}
+
+.comment p {
+  margin-left: 2em;
+}
+
+#commentArea {
+  background-color: rgb(250,240,240);
+}
+
+.toggle:hover {
+  cursor: pointer ;
+}

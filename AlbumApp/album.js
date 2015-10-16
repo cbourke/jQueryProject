@@ -13,3 +13,9 @@ function addErrorBox(errorMessage) {
   $('#errorArea').append(errorDiv);
   $('#errorArea').hide().fadeIn("slow");
 }
+
+function removeItem(item) {
+  $(item).parent().parent().fadeOut("slow", function() {
+    $(this).remove();
+  });
+}
