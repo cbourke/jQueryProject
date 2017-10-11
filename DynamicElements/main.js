@@ -4,8 +4,6 @@ $(document).ready( function() {
   //TODO
   //Place your page load animations here:
 
-
-
   //Teaser Preview
   //1. Use jQuery to get the HTML contents of the article and store it in a variable
   //2. Use jQuery to get the text of the lead paragraph and store it in a variable
@@ -53,5 +51,17 @@ function toggleAllComments() {
  *  in the comment section with the given commentNumber
  */
 function commentToggle(commentNumber) {
-  //TODO
+
+  //TODO: generalize this function so that it
+  //      works with any of the comments identified
+  //      by the commentNumber passed to this function
+  var toggleText = $("#commentToggle1").text();
+  if(toggleText === "[-]") {
+    //they clicked [-] so collapse:
+    $("#commentBody1").slideUp();
+    //and reset the toggle text:
+    $("#commentToggle1").text("[+]");
+  }
+  //TODO: handle the "show" case
+
 }
